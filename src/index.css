@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(135deg, #121212,#121212, #ffa200);
+  background-size: 400% 400%; /* Make the gradient large enough to move */
+  animation: gradientMove 5s ease infinite; /* Apply the animation */
+  height: 100vh; /* Full screen height */
+  margin: 0; /* Remove default margin */
+}
+
+/* Keyframes for animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%; /* Starting position of the gradient */
+  }
+  50% {
+    background-position: 100% 50%; /* Move the gradient to the right */
+  }
+  100% {
+    background-position: 0% 50%; /* Reset to starting position */
+  }
+}
